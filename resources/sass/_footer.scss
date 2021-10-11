@@ -1,0 +1,98 @@
+.footer-top{
+    height: 400px;
+    background-image: url('../images/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 20px;
+    ul{
+        list-style-type: none;
+    }
+
+}
+.footer-bottom{
+    padding: 15px;
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    background: #303030;
+    color: #fff;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+    /*CONTAINER E COL PER IL FOOTER*/
+    .container-mini{
+        min-width: 500px;
+        display: flex;
+        flex-direction: row;
+            .col{
+                margin-top: 20px;
+                width: calc(100% / 3);
+                    a{
+                    color: #fff;
+                    }
+                    h4{
+                    margin-bottom:10px;
+                    }
+                    
+                    ul{
+                        list-style-type: none;
+                        li{
+                            margin-right: 10px;
+                            a{
+                                &:hover{
+                                    color: $dc-color;
+                                }
+                            }
+                        }
+                    }
+        }
+    }   
+    .poisition-end{
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+    .dc-foot{
+        position: absolute;
+        right: 60px;
+    }
+    /*FOOTER BOTTOM*/
+    .d-inline{
+        li{
+            margin-right: 10px;
+            a{
+                &:hover{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    .col-foot{
+      display: flex;
+      justify-content: center;
+    }
+    
+    /*BUTTON OUTLINE*/
+    .btn-outline-b{
+        padding: 10px;
+        border: 1px solid $dc-color;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+            &:hover{
+                background-color: $dc-color;
+            }
+    }
+    .follow{
+        vertical-align: 10px;
+        color: $dc-color;
+        font-size: 1.2em;
+    }
+
+    .text-foot{
+        a{
+            color: $text-foot
+        }
+    }

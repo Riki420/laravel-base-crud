@@ -1,0 +1,458 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);/*RESET*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*GENERICS STYLE*/
+
+body {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.container-foot {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.d-flex-wrap-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.z-1 {
+  z-index: 1;
+  position: relative;
+}
+
+.active {
+  border-bottom: 4px solid #0c7cec;
+}
+
+/*DISPLAY*/
+
+.d-flex-i-center {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex-j-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-inline li {
+  display: inline;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/*MARGIN E PADDING*/
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.me-2 {
+  margin-right: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.none-style {
+  list-style-type: none;
+}
+
+.me-auto {
+  margin: 0 auto;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+/*COL*/
+
+.col-8 {
+  width: 80%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.prd-card {
+  padding: 20px;
+  height: 200px;
+  width: 140px;
+  margin: 10px 10px;
+}
+
+/*JUMBOTRON*/
+
+.jumbotron {
+  min-height: 500px;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-position: top;
+  background-size: cover;
+}
+
+/*TEXT*/
+
+.dc-text {
+  color: #0c7cec;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/*HEADER*/
+
+header {
+  border-bottom: 1px solid black;
+}
+
+.header-top {
+  height: 20px;
+  background-color: #000;
+}
+
+.header-bottom {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*NAVBAR*/
+
+.main-nav {
+  list-style-type: none;
+  align-self: center;
+  display: flex;
+}
+
+.main-nav a {
+  margin-right: 10px;
+  justify-content: end;
+  padding: 6px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  border-bottom: 4px solid #0c7cec;
+}
+
+figure {
+  padding: 6px;
+}
+
+#products {
+  min-height: 120px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-position: top;
+  background-size: cover;
+}
+
+.current {
+  background-color: #0c7cec;
+  padding: 10px;
+  height: 40px;
+  font-size: 1.2em;
+}
+
+.loadMoreBtn {
+  padding: 0 60px;
+  height: 40px;
+  background-color: #0c7cec;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.loadMoreBtn:hover {
+  background-color: #096dd1;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.wrapper-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.p-2 {
+  padding: 20px 20px;
+}
+
+.bg-dc {
+  background-color: #0c7cec;
+  height: 80px;
+}
+
+#detail-section {
+  position: relative;
+  bottom: 100px;
+}
+
+.comic-card-img {
+  position: relative;
+  bottom: 220px;
+  height: 200px;
+  width: 140px;
+}
+
+.comic-card-img .border-white {
+  border: 1px solid #fff;
+}
+
+.comic-card-img .comic-book {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00a9d9;
+  color: #fff;
+  padding: 2px;
+}
+
+.comic-card-img .view-gallery {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00a9d9;
+  text-align: center;
+  color: #fff;
+  padding: 2px;
+}
+
+.adv {
+  color: #444;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.list-detail {
+  padding: 20px 10px;
+  border-bottom: 1px solid #000;
+}
+
+.list-detail a {
+  color: #0c7cec;
+  text-transform: uppercase;
+}
+
+.bg-g {
+  background-color: #55ba59;
+}
+
+.br-r {
+  border-right: 1px solid black;
+}
+
+/*CARD*/
+
+.col-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-card .card {
+  flex-basis: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col-card .card img {
+  width: 50%;
+}
+
+.col-card .card img:hover {
+  filter: grayscale(0.5);
+  cursor: pointer;
+}
+
+.footer-top {
+  height: 400px;
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.footer-top ul {
+  list-style-type: none;
+}
+
+.footer-bottom {
+  padding: 15px;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  background: #303030;
+  color: #fff;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+/*CONTAINER E COL PER IL FOOTER*/
+
+.container-mini {
+  min-width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-mini .col {
+  margin-top: 20px;
+  width: 33.3333333333%;
+}
+
+.container-mini .col a {
+  color: #fff;
+}
+
+.container-mini .col h4 {
+  margin-bottom: 10px;
+}
+
+.container-mini .col ul {
+  list-style-type: none;
+}
+
+.container-mini .col ul li {
+  margin-right: 10px;
+}
+
+.container-mini .col ul li a:hover {
+  color: #0c7cec;
+}
+
+.poisition-end {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+.dc-foot {
+  position: absolute;
+  right: 60px;
+}
+
+/*FOOTER BOTTOM*/
+
+.d-inline li {
+  margin-right: 10px;
+}
+
+.d-inline li a:hover {
+  filter: invert(1);
+}
+
+.col-foot {
+  display: flex;
+  justify-content: center;
+}
+
+/*BUTTON OUTLINE*/
+
+.btn-outline-b {
+  padding: 10px;
+  border: 1px solid #0c7cec;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-outline-b:hover {
+  background-color: #0c7cec;
+}
+
+.follow {
+  vertical-align: 10px;
+  color: #0c7cec;
+  font-size: 1.2em;
+}
+
+.text-foot a {
+  color: #4e5f6d;
+}
+

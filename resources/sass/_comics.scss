@@ -1,0 +1,34 @@
+#products{
+    min-height: 120px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+ .jumbotron{
+        height: 400px;
+        background-image: url('../images/jumbotron.jpg');
+        background-position: top;
+        background-size: cover;
+    }
+
+
+    .current{
+        background-color: $dc-color;
+        padding: 10px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+.loadMoreBtn{
+    padding: 0 60px;
+    height: 40px;
+    background-color: $dc-color;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background-color: $dc-color-2;
+    }
+}

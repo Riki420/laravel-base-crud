@@ -1,0 +1,154 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*GENERICS STYLE*/
+body{
+    font-family: 'Saira Extra Condensed', sans-serif;;
+}
+
+.container-foot{
+  min-width: 100%;
+  margin: 0 auto;
+}
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.w-75{
+  width: 75%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: stretch;
+  }
+  .d-flex-wrap-col{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+img{
+  max-width: 100%;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.z-1{
+  z-index: 1;
+  position: relative;
+}
+
+.active{
+    border-bottom: 4px solid #0c7cec;     
+}
+
+/*DISPLAY*/
+.d-flex-i-center{
+  display: flex;
+  align-items: center;
+}
+.d-flex-j-center{
+  display: flex;
+  justify-content: center;
+}
+.d-inline{
+  li{
+    display: inline;
+  }
+}
+.d-flex{
+    display: flex;
+}
+/*MARGIN E PADDING*/
+.mt-2{
+  margin-top: 20px;
+}
+.me-2{
+    margin-right: 20px;
+}
+.mb-2{
+  margin-bottom: 20px;
+}
+.mr-1{
+  margin-right: 10px;
+}
+
+.py-2{
+  padding: 20px 0;
+}
+
+
+
+.none-style{
+  list-style-type: none;
+}
+
+.me-auto{
+  margin: 0 auto;
+}
+
+.w-25{
+  width: 25%;
+}
+
+
+/*COL*/
+.col-8{
+    width: 80%;
+    }
+.col-2{
+    width: 20%;
+    }
+
+.col-6{
+    width: 50%;
+}
+
+.prd-card{
+  padding: 20px;
+    height: 200px;
+    width: 140px;
+    margin: 10px 10px;
+    
+}
+
+/*JUMBOTRON*/
+.jumbotron{
+    min-height: 500px;
+    background-image: url('../images/jumbotron.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+
+/*TEXT*/
+
+.dc-text{
+    color: $dc-color;
+}
+.text-white{
+    color: #fff;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}

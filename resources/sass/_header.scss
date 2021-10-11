@@ -1,0 +1,37 @@
+/*HEADER*/
+header{
+    border-bottom: 1px solid black;
+}
+
+.header-top{
+    height: 20px;
+    background-color: #000;   
+}
+
+.header-bottom{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*NAVBAR*/
+.main-nav{
+    list-style-type: none;
+    align-self: center;
+    display: flex;
+
+        a{
+            margin-right: 10px;
+            justify-content: end;
+            padding: 6px;
+                &:hover,
+                &:active{
+                   border-bottom: 4px solid $dc-color; 
+                }
+        }
+        
+}
+
+figure{
+    padding: 6px;
+}

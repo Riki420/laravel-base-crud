@@ -1,0 +1,96 @@
+.wrapper{
+    display: flex;
+    align-items:stretch;
+    flex-wrap: wrap;
+}
+.wrapper-between{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.p-2{
+    padding: 20px 20px;
+}
+.bg-dc{
+    background-color: $dc-color;
+    height: 80px;    
+}
+#detail-section{
+    position: relative;
+    bottom: 100px;
+}
+.comic-card-img{
+        position: relative;
+        bottom: 220px;
+        height: 200px;
+        width: 140px;
+        .border-white{
+            border: 1px solid #fff;
+        }      
+        .comic-book{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #00a9d9;
+            color: #fff;
+            padding: 2px;
+        }
+        .view-gallery{
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #00a9d9;
+            text-align: center;
+            color: #fff;
+            padding: 2px;
+
+        }
+    }
+    
+
+
+
+    .adv{
+        color: #444;
+        text-align: right;
+        font-size: 0.8em;
+    }
+
+.list-detail{
+    padding: 20px 10px;
+    border-bottom: 1px solid #000;
+    a{
+        color: $dc-color;
+        text-transform: uppercase;
+    }
+}
+
+.bg-g{
+    background-color: #55ba59;
+}
+
+.br-r{
+    border-right: 1px solid black;
+}
+
+/*CARD*/
+.col-card{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        flex-basis: 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            width: 50%;
+            &:hover{
+                filter:grayscale(0.5);
+                cursor: pointer;
+            }
+        }
+    }
+}
