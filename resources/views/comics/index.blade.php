@@ -10,7 +10,7 @@
             @foreach ($comics as $comic)
             <div class="col-card py-2 d-flex-j-center">
                 <div class="prd-card mt-2">
-                    <a href="">
+                    <a href="{{ route('comics.show', $comic->id) }}">
                         <img src="{{ $comic->thumb }}" alt="Poster Fumetto">
                     </a>
                     <h6>{{ $comic->title }}</h6>

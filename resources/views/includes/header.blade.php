@@ -6,8 +6,9 @@
                 <img src="{{ asset('images/dc-logo.png') }}" alt="DC-logo">
             </figure>
             <ul class="main-nav">
-                <li class="me-2"><a href="{{ route('home') }}">Home</a><li>
-                <li><a href="{{ route('comics') }}">Comics</a></li>
+                <li class="me-2"><a href="{{ route('home') }}">Home</a>
+                <li>
+                <li><a href="{{ route('comics.index') }}">Comics</a></li>
             </ul>
         </div>
     </div>
