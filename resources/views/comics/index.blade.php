@@ -4,9 +4,9 @@
 @section('content')
 <div id="products" class="z-1">
     <div class="jumbotron"></div>
-    <div class="container w-75">
+    <div class="container">
+        <span class="current">CURRENT SERIES</span>
         <div class="row">
-            <span class="current">CURRENT SERIES</span>
             @foreach ($comics as $comic)
             <div class="col-card py-2 d-flex-j-center">
                 <div class="prd-card mt-2">
@@ -23,4 +23,5 @@
         </div>
     </div>
 </div>
+@include('includes.dcicon')
 @endsection

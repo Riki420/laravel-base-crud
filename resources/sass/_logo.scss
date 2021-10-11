@@ -1,0 +1,21 @@
+ .icon-section{
+        height: 200px;
+        background-color: $dc-color;
+    }
+    .col-icon{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4em;
+        color: #fff;
+        height: 200px;
+        width: 20%;
+        img{
+            margin-right: 10px;
+        }
+        &:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
