@@ -2,9 +2,9 @@
 @section('title', 'Home')
 @section('content')
 <section>
-    <h1 class="text-center dc-text">Aggiungi Fumetto</h1>
-
-    <form action="{{ route('comics.store') }}" method="post">
+    <h1 class="text-center dc-text">Modifica Fumetto</h1>
+    <form action="{{ route('comics.update', $comic->id) }}" method="post">
+        @method('PATCH')
         @csrf
         <div class="col-form">
             <label for="title" class="form-label">Inserisci titolo</label>
@@ -41,7 +41,7 @@
             <input type="number" class="form-control" id="price" name="price">
         </div>
         <div>
-            <button type="submit" class="btn-add">Aggiungi</button>
+            <button type="submit" class="btn-add">Modifica</button>
             <button type="reset" class="btn-remove">Reset</button>
         </div>
 

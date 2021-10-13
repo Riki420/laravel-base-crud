@@ -184,6 +184,20 @@ a {
   text-transform: capitalize;
 }
 
+.loadMoreBtn {
+  padding: 0 60px;
+  height: 40px;
+  background-color: #0c7cec;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.loadMoreBtn:hover {
+  background-color: #096dd1;
+}
+
 .btn-remove {
   background-color: #720808;
   color: #fff;
@@ -200,14 +214,14 @@ a {
   background-color: #974b15;
   padding: 1.2em;
   color: #fff;
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
 }
 
 .edit-comics:hover {
-  display: block;
+  opacity: 1;
 }
 
 .fade-in-right {
@@ -329,6 +343,35 @@ figure {
   padding: 6px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4em;
+}
+
+form .col-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+
+form .col-form .form-label {
+  font-size: 1.2em;
+  margin-right: 0.8em;
+}
+
+form .col-form .form-control {
+  width: 100%;
+  font-size: 1.2em;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.8em;
+}
+
 #products {
   min-height: 120px;
   background-color: #000;
@@ -347,21 +390,6 @@ figure {
   background-color: #0c7cec;
   padding: 1.2em;
   height: 40px;
-  font-size: 1.2em;
-}
-
-.loadMoreBtn {
-  padding: 0 60px;
-  height: 40px;
-  background-color: #0c7cec;
-  border: 0;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.loadMoreBtn:hover {
-  background-color: #096dd1;
 }
 
 .wrapper {

@@ -6,7 +6,7 @@
     <div class="jumbotron"></div>
     <div class="container">
         <span class="current">CURRENT SERIES</span>
-        <a href="{{ route('comics.create') }}" class="btn-add"><span class="add">Add Comics</span></a>
+        <a href="{{ route('comics.create') }}" class="btn-add">Add Comics</a>
         <div class="row">
             @foreach ($comics as $comic)
             <div class="col-3 py-2 d-flex-j-center">
@@ -17,7 +17,7 @@
                                 <img src="{{ $comic->thumb }}" alt="Poster Fumetto">
 
                             </figure>
-                            <btn class="edit-comics">Edit</btn>
+                            <a class="edit-comics" href="{{route('comics.edit', $comic->id)}}">Edit</a>
                         </div>
 
                     </a>

@@ -17,19 +17,6 @@
         background-color: $dc-color;
         padding: 1.2em;
         height: 40px;
-        font-size: 1.2em;
     }
     
 
-.loadMoreBtn{
-    padding: 0 60px;
-    height: 40px;
-    background-color: $dc-color;
-    border: 0;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    &:hover{
-        background-color: $dc-color-2;
-    }
-}

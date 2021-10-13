@@ -169,6 +169,19 @@ a{
 
 //Button
 
+.loadMoreBtn{
+    padding: 0 60px;
+    height: 40px;
+    background-color: $dc-color;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+        background-color: $dc-color-2;
+    }
+}
+
 .btn-remove{
   background-color: rgb(114, 8, 8);
   color: #fff;
@@ -189,6 +202,8 @@ a{
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
   &:hover{
+    opacity: 1;
   }
 }
