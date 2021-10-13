@@ -88,6 +88,10 @@ a {
   margin-right: 20px;
 }
 
+.me-auto {
+  margin: 0 auto;
+}
+
 .mb-2 {
   margin-bottom: 20px;
 }
@@ -98,6 +102,10 @@ a {
 
 .py-2 {
   padding: 20px 0;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .none-style {
@@ -126,14 +134,18 @@ a {
   width: 20%;
 }
 
+.col-3 {
+  width: 33.3333333333%;
+}
+
 .col-6 {
   width: 50%;
 }
 
 .prd-card {
   padding: 20px;
-  height: 200px;
-  width: 140px;
+  height: 400px;
+  width: 280px;
   margin: 10px 10px;
 }
 
@@ -170,6 +182,32 @@ a {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.btn-remove {
+  background-color: #720808;
+  color: #fff;
+  padding: 1.2em;
+}
+
+.btn-add {
+  background-color: #0c7cec;
+  color: #fff;
+  padding: 1.2em;
+}
+
+.edit-comics {
+  background-color: #974b15;
+  padding: 1.2em;
+  color: #fff;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.edit-comics:hover {
+  display: block;
 }
 
 .fade-in-right {
@@ -299,15 +337,15 @@ figure {
 }
 
 .jumbotron {
-  height: 400px;
   background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  max-height: 400px;
   background-position: top;
   background-size: cover;
 }
 
 .current {
   background-color: #0c7cec;
-  padding: 10px;
+  padding: 1.2em;
   height: 40px;
   font-size: 1.2em;
 }

@@ -6,8 +6,8 @@
 }
 
  .jumbotron{
-        height: 400px;
-        background-image: url('../images/jumbotron.jpg');
+     background-image: url(../images/jumbotron.jpg);
+        max-height: 400px;
         background-position: top;
         background-size: cover;
     }
@@ -15,10 +15,11 @@
 
     .current{
         background-color: $dc-color;
-        padding: 10px;
+        padding: 1.2em;
         height: 40px;
         font-size: 1.2em;
     }
+    
 
 .loadMoreBtn{
     padding: 0 60px;
