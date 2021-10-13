@@ -90,7 +90,11 @@ class ComicsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $comic = Comics::findOrFail($id);
+        $comic->fill($data);
+        $comic->save();
+        return redirect()->route('comics.show', $id);
     }
 
     /**

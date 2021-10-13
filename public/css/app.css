@@ -212,16 +212,12 @@ a {
 
 .edit-comics {
   background-color: #974b15;
-  padding: 1.2em;
+  position: absolute;
+  padding: 0.2em;
   color: #fff;
   position: absolute;
   top: 0;
-  right: 0;
-  opacity: 0;
-}
-
-.edit-comics:hover {
-  opacity: 1;
+  right: 2px;
 }
 
 .fade-in-right {
@@ -357,6 +353,11 @@ form .col-form {
   justify-content: start;
   align-items: center;
   margin-bottom: 1.2em;
+}
+
+form .col-form textarea {
+  height: auto;
+  width: 100%;
 }
 
 form .col-form .form-label {

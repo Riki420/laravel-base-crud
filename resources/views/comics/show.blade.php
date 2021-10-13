@@ -36,6 +36,7 @@
                 <p>
                     {{$comic->description}}
                 </p>
+                <a class="edit-comics" href="{{route('comics.edit', $comic->id)}}">Edit</a>
             </div>
             <!--COMIC ADV-->
             <div class="col-2 p-2">

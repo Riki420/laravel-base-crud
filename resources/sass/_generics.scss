@@ -197,13 +197,10 @@ a{
 
 .edit-comics{
   background-color: #974b15;
-  padding: 1.2em;
+  position: absolute;
+  padding: 0.2em;
   color: #fff;
   position: absolute;
   top: 0;
-  right: 0;
-  opacity: 0;
-  &:hover{
-    opacity: 1;
-  }
+  right: 2px;
 }
