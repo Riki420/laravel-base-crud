@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);/*RESET*/
+/*RESET*/
 
 * {
   margin: 0;
@@ -24,6 +24,10 @@ body {
 
 .w-75 {
   width: 75%;
+}
+
+.w-50 {
+  width: 50%;
 }
 
 .row {
@@ -120,6 +124,10 @@ a {
   width: 25%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /*COL*/
 
 .col-8 {
@@ -198,26 +206,52 @@ a {
   background-color: #096dd1;
 }
 
-.btn-remove {
+.btn-reset {
   background-color: #720808;
   color: #fff;
   padding: 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  background-color: #5a0909;
 }
 
 .btn-add {
-  background-color: #0c7cec;
+  background-color: #1a6e1e;
   color: #fff;
   padding: 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #125215;
 }
 
 .edit-comics {
   background-color: #974b15;
-  position: absolute;
-  padding: 0.2em;
+  padding: 1.2em;
   color: #fff;
-  position: absolute;
-  top: 0;
-  right: 2px;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+
+.edit-comics:hover {
+  background-color: #7e3f12;
+}
+
+.btn-delete {
+  background-color: #972323;
+  color: #fff;
+  padding: 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #7e1212;
 }
 
 .fade-in-right {
@@ -339,6 +373,17 @@ figure {
   padding: 6px;
 }
 
+#formSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1.4em;
+  padding: 1.2em;
+  border: 1px solid #000;
+  border-radius: 0.5em;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -352,25 +397,26 @@ form .col-form {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  width: 80%;
   margin-bottom: 1.2em;
 }
 
 form .col-form textarea {
-  height: auto;
+  height: 200px;
   width: 100%;
 }
 
 form .col-form .form-label {
-  font-size: 1.2em;
+  font-size: 1.8em;
   margin-right: 0.8em;
 }
 
 form .col-form .form-control {
   width: 100%;
-  font-size: 1.2em;
-  border: 1px solid black;
+  font-size: 1.3em;
+  border: 1px solid #000;
   border-radius: 10px;
-  padding: 0.8em;
+  padding: 1em;
 }
 
 #products {

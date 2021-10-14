@@ -36,7 +36,7 @@
                 <p>
                     {{$comic->description}}
                 </p>
-                <a class="edit-comics" href="{{route('comics.edit', $comic->id)}}">Edit</a>
+
             </div>
             <!--COMIC ADV-->
             <div class="col-2 p-2">
@@ -83,6 +83,16 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="d-flex-i-center py-2">
+        <div>
+            <a class="edit-comics w-50" href="{{route('comics.edit', $comic->id)}}">Edit</a>
+        </div>
+        <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn-delete dc-text w-50"><i class="fas fa-trash"></i></button>
+        </form>
     </div>
 
 </div>

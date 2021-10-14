@@ -20,6 +20,9 @@ body{
 .w-75{
   width: 75%;
 }
+.w-50{
+  width: 50%;
+}
 .row{
     display: flex;
     flex-direction: row;
@@ -105,6 +108,9 @@ a{
 .w-25{
   width: 25%;
 }
+.w-100{
+  width: 100%;
+}
 
 
 /*COL*/
@@ -182,25 +188,50 @@ a{
     }
 }
 
-.btn-remove{
-  background-color: rgb(114, 8, 8);
+.btn-reset{
+  background-color: #720808;
   color: #fff;
   padding: 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+  &:hover{
+    background-color: #5a0909;
+  }
 
 }
 
 .btn-add{
-  background-color: $dc-color;
+  background-color: #1a6e1e;
   color: #fff;
   padding: 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+  &:hover{
+    background-color: #125215;
+
+  }
 }
 
 .edit-comics{
   background-color: #974b15;
-  position: absolute;
-  padding: 0.2em;
+  padding: 1.2em;
+  color: #fff; 
+  border-radius: 1.2em;
+  cursor: pointer;
+  &:hover{
+    background-color: #7e3f12;
+
+  }
+}
+
+.btn-delete{
+  background-color: #972323;
   color: #fff;
-  position: absolute;
-  top: 0;
-  right: 2px;
+  padding: 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+  &:hover{
+    background-color: #7e1212;
+
+  }
 }

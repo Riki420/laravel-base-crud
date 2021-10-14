@@ -1,29 +1,40 @@
-form{
+#formSection{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 1.4em;
-    .col-form{
+    width: 100%;
+    margin: 1.4em;
+    padding: 1.2em;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+}
+    form{
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 1.2em;
-        textarea{
-            height: auto;
-            width: 100%;
-        }
-        .form-label{
-            font-size: 1.2em;
-            margin-right: 0.8em;
-        }
-        .form-control{
-            width: 100%;
-            font-size: 1.2em;
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 0.8em;
+        margin-top: 1.4em;
+        .col-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 1.2em;
+            textarea{
+                height: 200px;
+                width: 100%;
+            }
+            .form-label{
+                font-size: 1.8em;
+                margin-right: 0.8em;
+            }
+            .form-control{
+                width: 100%;
+                font-size: 1.3em;
+                border: 1px solid #000;
+                border-radius: 10px;
+                padding: 1em;
+            }
         }
     }
-}
