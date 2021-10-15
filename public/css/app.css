@@ -451,6 +451,13 @@ form .col-form .form-control {
   flex-wrap: wrap;
 }
 
+.wrapper-around {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 .p-2 {
   padding: 20px 20px;
 }

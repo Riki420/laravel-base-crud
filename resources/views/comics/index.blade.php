@@ -12,8 +12,17 @@
             @foreach ($comics as $comic)
             <div class="col-3 py-2 d-flex-j-center">
                 <div class="prd-card mt-2">
-                    <div class="d-flex">
-                        <a class="edit-comics w-100 text-center" href="{{route('comics.edit', $comic->id)}}"><i class="fas fa-pencil-alt"></i></a>
+                    <div class="wrapper-around d-flex-i-center">
+                        <div>
+                            <a class="edit-comics" href="{{route('comics.edit', $comic->id)}}"><i class="fas fa-pencil-alt"></i></a>
+                        </div>
+                        <div>
+                            <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn-delete dc-text"><i class="fas fa-trash p-2"></i></button>
+                            </form>
+                        </div>
                     </div>
                     <a href="{{ route('comics.show', $comic->id) }}">
                         <div>
@@ -24,11 +33,7 @@
                         </div>
                     </a>
                     <h6>{{ $comic->title }}</h6>
-                    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn-delete dc-text w-100"><i class="fas fa-trash"></i></button>
-                    </form>
+
                 </div>
             </div>
             @endforeach
